@@ -1,4 +1,4 @@
-# pv-todo
+# PV Vue Training
 
 > A Vue.js project
 
