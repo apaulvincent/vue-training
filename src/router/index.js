@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
-import About from '@/components/About'
+import Todo from '@/components/Todo'
+import Tabs from '@/components/Tabs'
 
 Vue.use(Router)
 
@@ -9,12 +9,12 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Hello',
-      component: Hello
+      name: 'Todo',
+      component: Todo
     }, {
-      path: '/about',
-      name: 'About',
-      component: About
+      path: '/tabs',
+      name: 'Tabs',
+      component: Tabs
     }
     
   ]
