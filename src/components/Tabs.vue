@@ -1,39 +1,30 @@
 <template>
   <div>
-    <div class="tabs">
-      <ul>
-        <tab v-for="(tab, i) in tabs" :name="tab.title" :selected="true" :key="i"></tab>
-      </ul>
-    </div>
+      <tabular>
 
-    <div class="tabs-details">
-      {{ getContents }}
-    </div>
+        <tab-item name="About Us" :selected="true">
+          <h2>Lorem ip sum doler site amate konsex tituer</h2>
+        </tab-item>
 
+        <tab-item name="About Me">
+          <h2>Lorem ip sum doler site amate konsex me</h2>
+        </tab-item>
+        
+        <tab-item name="About You">
+          <h2>Lorem ip sum doler site amate konsex you</h2>
+        </tab-item>
+
+      </tabular>
   </div>
 </template>
 
 <script>
 
-import Tab from './Tab'
+import Tabular from './Tabular'
+import TabItem from './TabItem'
 
 export default {
-  components: {Tab},
-  data () {
-    return {
-      tabs: [
-        {title: 'Batman and Robin', content: 'The good and the bad'},
-        {title: 'Walter and James', content: 'The bad and the not so bad'}
-      ]
-    }
-  },
-  computed: {
-    getContents () {
-      return this.tabs.forEach(t => {
-        return t.content
-      })
-    }
-  }
+  components: {Tabular, TabItem},
 }
 </script>
 
